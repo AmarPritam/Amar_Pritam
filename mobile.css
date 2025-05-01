@@ -1,0 +1,146 @@
+@media screen and (max-width: 568px){
+  body{
+    background-color: var(--secondaryColor);
+  }
+  
+  nav {
+  position: fixed;
+  right: 0;
+  z-index: 10;
+}
+  
+  nav ul{
+    position: fixed;
+    left: 50%;
+    background-color: #FFFFFF22;
+    box-shadow: 0 0 0;
+    top: 95%;
+    height: 100vw;
+    gap: 50px;
+    transform: translateY(-50%) translateX(-50%) rotate(-90deg);
+    backdrop-filter: blur(20px);
+  }
+  
+  nav ul li{
+    transform: rotate(90deg);
+  }
+  
+  .check{
+    z-index: 100;
+    transform: rotate(180deg);
+    top: 50%;
+    transform: translateY(-50%) rotate(180deg);
+    left: calc(100% - 20px);
+    display: none;
+  }
+  
+  #navBtn:checked~ul {
+  box-shadow: 5px 0 10px 2px var(--blackGrey);
+}
+
+#navBtn:checked~.check {
+  left: calc(100% - 90px);
+  box-shadow: 5px 0 10px 2px var(--blackGrey);
+}
+  
+  section{
+    padding: 0 10vw;
+    align-items: center;
+    padding: 30vh 10vw 5vh 10vw;
+  }
+  
+  .section-one{
+    height: 100vh;
+  }
+  .section-one h1{
+    font-size: 19vw;
+    margin-left: 10vw;
+    margin-top: 30vw;
+  }
+  .section-one h3{
+    margin-left: 10vw;
+  }
+  .section-one img{
+    position: absolute;
+    bottom: 0;
+    transform: scale(21);
+  }
+  
+  .section-two{
+    display: block;
+    width: 100vw;
+    padding: 30vh 10vw 5vh 10vw;
+  }
+  .mainHeading{
+    position: absolute;
+    font-size: 18vh;
+    left: 0vw;
+    top: 0;
+  }
+  .mainHeading::after{
+    left: 0;
+  }
+  .section-two .myPhoto img{
+    width: 80vw;
+  }
+  .section-two .aboutMe{
+    width: 80vw;
+    margin-top: 50px;
+  }
+  
+  .projectBox{
+    flex-direction: column;
+    top: 0vh;
+  }
+  
+  .projectBox .project:nth-child(3){
+    display: none;
+  }
+  .container{
+    top: 10vh;
+  }
+  
+  .section-four{
+    height: 170vh;
+  }
+  
+  .section-five{
+    flex-direction: column;
+    height: 170vh;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .section-five .hire, .section-five .contact{
+    height: 35%;
+    width: 90%;
+  }
+  
+  .section-five .hire{
+    top: 10%;
+  }
+  
+  .section-five .contact{
+    margin-top: 20vh;
+  }
+  
+  .section-five .mainHeading{
+    top: -10vh;
+  }
+  
+  
+  .section-five .hire p{
+    font-size: 14px;
+  }
+  
+  .section-five .hire h2{
+    font-size: 35px;
+  }
+  
+  .section-five .mainHeading{
+    margin-top: 100px;
+  }
+  
+  
+  
+}

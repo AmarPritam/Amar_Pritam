@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>Portfolio 2</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="mobile.css" type="text/css" media="all" />
+  <link rel="stylesheet" href="tablet.css">
+</head>
+
+<body>
+  
+  <section class="section-one" id="Home">
+    <span class="dark" onclick="myFunction()"><i class="fa-solid fa-sun" onclick="changeIcon(this)"></i></span>
+    <div>
+      <h1>Amar Pritam</h1>
+      <h3>Web-Developer</h3>
+    </div>
+    <!--   <input class="navBtn" type="checkbox" id="navBtn">-->
+    <nav class="nav">
+      <input type="checkbox" id="navBtn">
+      <label for="navBtn" class="check">
+        <i class="fa-solid fa-chevron-right"></i>
+      </label>
+      <ul>
+        <li onclick="home()"><span class="fa-solid fa-home"></span></li>
+        <li onclick="about()"><span class="fa-solid fa-user"></span></li>
+        <li onclick="skill()"><span class="fa-solid fa-code"></span></li>
+        <!--  <li onclick="experience()"><span class="fa-solid fa-book"></span></li>-->
+        <li onclick="project()"><span class="fa-solid fa-suitcase"></span></li>
+        <li onclick="contact()"><span class="fa-solid fa-phone"></span></li>
+      </ul>
+      
+    </nav>
+    <!-- <label for="navBtn" id="expand-btn">Toggle hidden rows</label>-->
+    <img class="imageZoom1" src="layered-waves-haikei.svg" alt="" />
+  </section>
+  
+  <section class="section-two" id="About">
+    <h1 class="mainHeading animateHeading">About</h1>
+    <div class="myPhoto animateTwo scrollDown scrollZoom">
+      <img src="myPic.jpg" alt="my-photo">
+    </div>
+    <div class="aboutMe scrollDown">
+      <h2 class="animateOne">Amar Pritam</h2>
+      <p class="animateOne"><span class="highlight">I am a Web-Developer. </span> Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure sapiente odit dolore praesentium natus, sint perspiciatis dolorem nesciunt et voluptatum consequuntur, alias eaque nemo excepturi recusandae, beatae quis, corporis fugiat possimus debitis voluptas autem repudiandae quisquam voluptatibus. Amet blanditiis magnam impedit obcaecati ratione consectetur ut.</p>
+    </div>
+  </section>
+  
+  <section class="section-three" id="Skills">
+    <h1 class="mainHeading animateHeading">Skills</h1>
+    <div class="container">
+      <div class="html autoBlur">
+        <h3><i class="fa-brands fa-html5"></i>HTML</h3>
+        <span></span>
+      </div>
+      <div class="css autoBlur">
+        <h3><i class="fa-brands fa-css3"></i>CSS</h3>
+        <span></span>
+      </div>
+      <div class="js autoBlur">
+        <h3><i class="fa-brands fa-js"></i>JAVASCRIPT</h3>
+        <span></span>
+      </div>
+    </div>
+  </section>
+  
+  <section class="section-four" id="Project">
+    <h1 class="mainHeading animateHeading">Projects</h1>
+    
+    <div class="projectBox">
+      <h3 class="title autoBlur">HTML, CSS</h3>
+      
+      <div class="project">
+        <div class="details">
+          <span>Project 1</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="details">
+          <span>Project 2</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="details">
+          <span>Project 3</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+    </div>
+    <div class="projectBox">
+      <h3 class="title autoBlur">JAVASCRIPT</h3>
+      <div class="project">
+        
+        <div class="details">
+          <span>Project 1</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="details">
+          <span>Project 2</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+      <div class="project">
+        <div class="details">
+          <span>Project 3</span>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora sapiente obcaecati suscipit adipisci officiis vel enim nobis eligendi quos quaerat.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+  
+  <section class="section-five" id="Contact">
+    <h1 class="mainHeading animateHeading">Contact</h1>
+    <div class="square"></div>
+    <div class="hire animateLeft">
+      <h2>Hire Me.</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Natus debitis temporibus molestiae at maxime nulla doloribus voluptatem odit, magnam et dolor, fugit, laudantium iure sint soluta sequi. Unde animi necessitatibus tempore rerum cum eligendi, dignissimos, cupiditate rem ut, ab magnam a quibusdam laudantium possimus nulla?</p>
+      <button type="submit">Download CV</button>
+    </div>
+    <div class="square"></div>
+    <div class="contact animateRight">
+    
+        <label for="name">Name</label>
+        <input type="text" name="name" placeholder="Enter your name."/>
+        <label for="email">Email</label>
+        <input type="email" name="email" placeholder="Enter your email.">
+        <label for="message">Message</label>
+        <textarea name="message" id= rows="2" cols="40"></textarea>
+        <button type="submit">Send Email</button>
+    </div>
+    <div class="square"></div>
+  </section>
+  
+  
+  <script src="script.js" type="text/javascript" charset="utf-8"></script>
+</body>
+
+</html>
